@@ -1,5 +1,53 @@
 .main {
   background-color: #f4f4f4;
   width: 700px;
+  height: 100px;
   margin: auto;
+}
+
+.header {
+  position: relative;
+  display: block;
+}
+.header__title {
+  float: left;
+}
+.header__selected-item {
+  float: left;
+  position: absolute;
+  right: 10px;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.header__select-list {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+.header__select-list-item {
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  list-style: none;
+}
+
+
+/* utility class*/
+.clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }
